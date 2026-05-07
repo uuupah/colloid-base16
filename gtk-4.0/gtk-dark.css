@@ -2898,7 +2898,7 @@ windowcontrols > button.minimize:backdrop:hover:not(.raised):not(.suggested-acti
 }
 
 windowcontrols > button.minimize:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque) > image {
-  background-color: #eacb8e;
+  background-color: @base0A;
 }
 
 windowcontrols > button.minimize:active:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque) > image {
@@ -2906,7 +2906,7 @@ windowcontrols > button.minimize:active:not(.raised):not(.suggested-action):not(
 }
 
 windowcontrols > button.maximize:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque) > image {
-  background-color: #b6cf8f;
+  background-color: @base0B;
 }
 
 windowcontrols > button.maximize:active:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque) > image {
@@ -2914,7 +2914,7 @@ windowcontrols > button.maximize:active:not(.raised):not(.suggested-action):not(
 }
 
 windowcontrols > button.close:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque) > image {
-  background-color: #ff9c9e;
+  background-color: @base08;
 }
 
 windowcontrols > button.close:active:not(.raised):not(.suggested-action):not(.destructive-action):not(.opaque) > image {
@@ -4811,7 +4811,7 @@ shortcut > .keycap, .card {
   background-color: @card_bg_color;
   color: @card_fg_color;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px rgba(255, 251, 239, 0.12);
+  box-shadow: 0 0 0 1px alpha(@base07, 0.12);
 }
 
 .osd shortcut > .keycap, shortcut > .osd.keycap, .osd .card, .card.osd {
@@ -8336,7 +8336,7 @@ menubutton stack > box {
 
 .running-stopwatch .seconds-label,
 .running-stopwatch .miliseconds-label {
-  color: #7fbbb3;
+  color: @theme_color;
 }
 
 .stopped-stopwatch .miliseconds-label,
@@ -8370,7 +8370,7 @@ menubutton stack > box {
 
 .night .clock-time {
   color: #3a94c5;
-  background-color: alpha(#7fbbb3,0.25);
+  background-color: alpha(@theme_color,0.25);
 }
 
 .naut .clock-time,
@@ -8691,7 +8691,7 @@ screenshot-carousel button,
 }
 
 .origin-beta {
-  color: #DBBC7F;
+  color: @base0A;
 }
 
 .origin-button > button {
@@ -8973,7 +8973,7 @@ star-image {
 }
 
 .upgrade-banner-background {
-  background: linear-gradient(to bottom, #A7C080, #7fbbb3);
+  background: linear-gradient(to bottom, #A7C080, @theme_color);
   color: white;
 }
 
@@ -9117,8 +9117,8 @@ carousel.card {
 }
 
 .context-tile-lozenge.blue, .context-tile-lozenge.details-rating-5 {
-  color: #7fbbb3;
-  background-color: alpha(#7fbbb3,0.15);
+  color: @theme_color;
+  background-color: alpha(@theme_color,0.15);
 }
 
 .context-tile-lozenge.yellow, .context-tile-lozenge.details-rating-12 {
@@ -9127,7 +9127,7 @@ carousel.card {
 }
 
 .context-tile-lozenge.details-rating-15 {
-  color: #E69875;
+  color: @base09;
   background-color: alpha(#E69875,0.15);
 }
 
@@ -9199,7 +9199,7 @@ row.app > box.header > image {
 }
 
 row.app label.warning {
-  color: #E67E80;
+  color: @base08;
 }
 
 @keyframes pre-delay {
@@ -9634,51 +9634,51 @@ window#desktopwindow.background {
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */
-@define-color accent_bg_color #7fbbb3;
-@define-color accent_fg_color rgba(30, 35, 38, 0.87);
-@define-color accent_color #7fbbb3;
-@define-color destructive_bg_color #E67E80;
-@define-color destructive_fg_color rgba(30, 35, 38, 0.87);
-@define-color destructive_color #E67E80;
-@define-color success_bg_color #A7C080;
-@define-color success_fg_color rgba(30, 35, 38, 0.87);
-@define-color success_color #A7C080;
-@define-color warning_bg_color #DBBC7F;
-@define-color warning_fg_color rgba(30, 35, 38, 0.87);
-@define-color warning_color #DBBC7F;
-@define-color error_bg_color #E67E80;
-@define-color error_fg_color rgba(30, 35, 38, 0.87);
-@define-color error_color #E67E80;
-@define-color window_bg_color #2d353b;
-@define-color window_fg_color #fffbef;
-@define-color view_bg_color #2d353b;
-@define-color view_fg_color #fffbef;
-@define-color headerbar_bg_color #2d353b;
-@define-color headerbar_fg_color #fffbef;
-@define-color headerbar_border_color #fffbef;
-@define-color headerbar_backdrop_color #272e33;
+@define-color accent_bg_color @theme_color;
+@define-color accent_fg_color alpha(@dim_background, 0.87);
+@define-color accent_color @theme_color;
+@define-color destructive_bg_color @base08;
+@define-color destructive_fg_color alpha(@dim_background, 0.87);
+@define-color destructive_color @base08;
+@define-color success_bg_color @base0B;
+@define-color success_fg_color alpha(@dim_background, 0.87);
+@define-color success_color @base0B;
+@define-color warning_bg_color @base0A;
+@define-color warning_fg_color alpha(@dim_background, 0.87);
+@define-color warning_color @base0A;
+@define-color error_bg_color @base08;
+@define-color error_fg_color alpha(@dim_background, 0.87);
+@define-color error_color @base08;
+@define-color window_bg_color @base00;
+@define-color window_fg_color @base07;
+@define-color view_bg_color @base00;
+@define-color view_fg_color @base07;
+@define-color headerbar_bg_color @base00;
+@define-color headerbar_fg_color @base07;
+@define-color headerbar_border_color @base07;
+@define-color headerbar_backdrop_color @dim_background;
 @define-color headerbar_shade_color rgba(0, 0, 0, 0.36);
-@define-color headerbar_darker_shade_color rgba(30, 35, 38, 0.75);
-@define-color sidebar_bg_color #272e33;
-@define-color sidebar_fg_color #fffbef;
-@define-color sidebar_backdrop_color #2d353b;
+@define-color headerbar_darker_shade_color alpha(@dim_background, 0.75);
+@define-color sidebar_bg_color @dim_background;
+@define-color sidebar_fg_color @base07;
+@define-color sidebar_backdrop_color @base00;
 @define-color sidebar_shade_color rgba(0, 0, 0, 0.25);
-@define-color sidebar_border_color rgba(255, 251, 239, 0.08);
-@define-color secondary_sidebar_bg_color #2d353b;
-@define-color secondary_sidebar_fg_color #fffbef;
-@define-color secondary_sidebar_backdrop_color #2d353b;
+@define-color sidebar_border_color alpha(@base07, 0.08);
+@define-color secondary_sidebar_bg_color @base00;
+@define-color secondary_sidebar_fg_color @base07;
+@define-color secondary_sidebar_backdrop_color @base00;
 @define-color secondary_sidebar_shade_color rgba(0, 0, 0, 0.25);
-@define-color secondary_sidebar_border_color rgba(255, 251, 239, 0.12);
-@define-color card_bg_color rgba(255, 251, 239, 0.04);
-@define-color card_fg_color #fffbef;
+@define-color secondary_sidebar_border_color alpha(@base07, 0.12);
+@define-color card_bg_color alpha(@base07, 0.04);
+@define-color card_fg_color @base07;
 @define-color card_shade_color rgba(0, 0, 0, 0.36);
-@define-color dialog_bg_color #272e33;
-@define-color dialog_fg_color #fffbef;
-@define-color popover_bg_color #2d353b;
-@define-color popover_fg_color #fffbef;
+@define-color dialog_bg_color @dim_background;
+@define-color dialog_fg_color @base07;
+@define-color popover_bg_color @base00;
+@define-color popover_fg_color @base07;
 @define-color popover_shade_color rgba(0, 0, 0, 0.25);
-@define-color thumbnail_bg_color #343f44;
-@define-color thumbnail_fg_color #fffbef;
+@define-color thumbnail_bg_color @base01;
+@define-color thumbnail_fg_color @base07;
 @define-color shade_color rgba(0, 0, 0, 0.25);
 @define-color scrollbar_outline_color rgba(0, 0, 0, 0.5);
 /* Public colors from Default */

@@ -2571,3 +2571,87 @@ dialog.xfsm-logout-dialog {
   -XfwmTabwinWidget-icon-size: 64px;
   -XfwmTabwinWidget-preview-size: 64px;
 }
+
+
+/************************
+ * LightDM GTK+ Greeter *
+ ************************/
+#panel_window {
+  background-color: @base00;
+  color: @base07;
+}
+
+#panel_window menubar,
+#panel_window separator {
+  background-color: transparent;
+}
+
+#panel_window separator {
+  padding: 0 4px;
+}
+
+#panel_window separator:first-child {
+  padding: 0 8px;
+}
+
+#panel_window menubar > menuitem {
+  color: rgba(255, 251, 239, 0.7);
+}
+
+#panel_window menubar > menuitem:hover {
+  color: @base07;
+}
+
+#panel_window menubar > menuitem:disabled label {
+  color: rgba(255, 251, 239, 0.32);
+}
+
+#login_window,
+#shutdown_dialog,
+#restart_dialog {
+  border-radius: 6px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.18), 0 3px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 251, 239, 0.1);
+  background-color: @base01;
+  color: @base07;
+}
+
+#content_frame {
+  padding-bottom: 16px;
+}
+
+#login_window GtkComboBox {
+  background: none;
+}
+
+#login_window GtkComboBox .button, #login_window GtkComboBox .button:hover, #login_window GtkComboBox .button:active, #login_window GtkComboBox .button:focus {
+  padding: 0;
+  background: none;
+  border-style: none;
+  box-shadow: none;
+}
+
+#user_image {
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#user_image_border {
+  border-radius: 3px;
+}
+
+#buttonbox_frame {
+  padding-top: 24px;
+}
+
+#buttonbox_frame > box,
+#buttonbox_frame > buttonbox {
+  margin: -16px;
+}
+
+#buttonbox_frame button:not(:disabled) {
+  color: @base0D;
+}
+
+#greeter_infobar {
+  font-weight: bold;
+}
