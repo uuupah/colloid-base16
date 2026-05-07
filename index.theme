@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=colloid-uuu
+Comment=an flat gtk+ theme based on inelegant tripe
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=colloid-uuu
+ButtonLayout=close,minimize,maximize:menu

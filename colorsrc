@@ -1,0 +1,13 @@
+gtk-color-scheme = "text_color:#abb2bf
+base_color:#1F2229
+fg_color:#abb2bf
+bg_color:#1F2229
+selected_fg_color:#abb2bf
+selected_bg_color:#61afef
+titlebar_fg_color:#abb2bf
+titlebar_bg_color:#282c34
+menu_color:#353b45
+tooltip_fg_color:#abb2bf
+tooltip_bg_color:#3e4451
+link_color:#56b6c2
+visited_link_color:#c678dd"
